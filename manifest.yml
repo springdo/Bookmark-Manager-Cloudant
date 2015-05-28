@@ -1,0 +1,14 @@
+applications:
+- services:
+  - Cloudant-Bookmanager
+  command: node ./server/app.js
+  disk_quota: 1024M
+  host: bookmanager-cloudant
+  name: bookmanager-cloudant
+  path: .
+  domain: mybluemix.net
+  instances: 1
+  memory: 256M
+  env:
+    NODE_ENV: production
+    DEV_ENV: production	
