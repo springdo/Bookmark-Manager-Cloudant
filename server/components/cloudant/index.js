@@ -1,7 +1,6 @@
 
 'use strict';
 
-var Promise = require('bluebird');
 var Cloudant = require('Cloudant');
 var config = require('../../config/environment');
 var when = require('when');
